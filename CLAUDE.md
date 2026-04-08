@@ -9,10 +9,10 @@
 
 ## Current State (MP-4)
 
-Full organ implementation: SQLite database with graph-native concepts, HTTP API for test result storage/retrieval, test registration, independent health log, diagnostics. Test execution engine with CV registry parsing, 14 reimplemented test functions, Spine-connected live loop with deterministic triggering and directed message handling.
+Full organ implementation: SQLite database with graph-native concepts, HTTP API for test result storage/retrieval, test registration, independent health log, diagnostics. Test execution engine with Vigil registry parsing, 14 reimplemented test functions, Spine-connected live loop with deterministic triggering and directed message handling.
 
 **Engine capabilities:**
-- CV registry YAML parsing (via python3 yaml.safe_load)
+- Vigil registry YAML parsing (via python3 yaml.safe_load)
 - 14 test functions: db-sqlite-online, db-radiant-online, db-radiant-rw, db-aosweb-online, radiant-boot-cache, radiant-dream-fresh, capture-unprocessed, capture-event-count, symlinks-resolve, launchagent-all-loaded, spine-server-running, spine-launchagent-loaded, backup-state-fresh, auth-session-token
 - Test result persistence (latest + historical dual URN)
 - Spine message handlers: run_tests, test_trigger, query_results
@@ -20,7 +20,7 @@ Full organ implementation: SQLite database with graph-native concepts, HTTP API 
 - Optional internal scheduler (VIGIL_SCHEDULER_ENABLED=true)
 
 **Pending (future):**
-- Full test coverage (remaining ~74 tests from CV registry)
+- Full test coverage (remaining ~74 tests from Vigil registry)
 - LaunchAgent configuration
 - Freshness contract enforcement and staleness classification
 - Parallel test execution
